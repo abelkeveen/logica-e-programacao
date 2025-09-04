@@ -19,12 +19,21 @@ function divisaoDeDoisNumeros(valor1, valor2) {
 }
 
 function calcularMediaDeDoisNumeros(valor1, valor2) {
+  // 1. Soma todos os valores
   const resultadoSomaDeDoisValores = somarDoisNumeros(valor1, valor2);
+
+  // 2. Divide pela quantidade de números passados
   const resultadoMediaDeDoisValores = resultadoSomaDeDoisValores / 2;
+
+  // 3. Retornar o resultado
   return resultadoMediaDeDoisValores;
 }
 
+// Exportando a função para o arquivo calculadora.test.js
 module.exports = {
   somarDoisNumeros,
   subtracaoDeDoisNumeros,
+  multiplicacaoDeDoisNumeros,
+  divisaoDeDoisNumeros,
+  calcularMediaDeDoisNumeros
 };
